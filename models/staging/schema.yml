@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned orders data from thelook_ecommerce"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_users
+    description: "Cleaned users data from thelook_ecommerce"
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null

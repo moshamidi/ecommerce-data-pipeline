@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: thelook_ecommerce
+    database: bigquery-public-data
+    schema: thelook_ecommerce
+    description: "Raw e-commerce data from Google BigQuery public dataset"
+    tables:
+      - name: orders
+        description: "Raw orders data"
+      - name: users
+        description: "Raw customer data"
+      - name: products
+        description: "Raw product catalog"
+      - name: order_items
+        description: "Raw order line items"
+      - name: events
+        description: "Raw website events/clickstream data"
